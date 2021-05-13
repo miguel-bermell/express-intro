@@ -37,32 +37,7 @@ const chistes = [
 ];
 
 server.get("/data", (req, res) => {
-  const chistes = [
-    {
-      id: 0,
-      joke: "President Roosevelt once rode his horse 100 miles. John Doe carried his the same distance in half the time.",
-    },
-    {
-      id: 1,
-      joke: "What did the chick say when the hen laid an orange?. Look what marmalade?",
-    },
-    {
-      id: 2,
-      joke: "Who tells the funniest jokes on the farm?. The comedi-hen!.",
-    },
-    {
-      id: 3,
-      joke: "Why did the chicken go to the seance?. To get to the other side!.",
-    },
-    {
-      id: 4,
-      joke: "Why did Beethoven get rid of his chickens?. All they said was, “Bach, Bach, Bach…”!.",
-    },
-    {
-      id: 5,
-      joke: "Why did the farmer have to separate the chicken and the turkey?. He sensed fowl play!.",
-    },
-  ];
+  chistes;
   res.send(chistes);
 });
 
