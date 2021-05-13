@@ -73,9 +73,9 @@ server.get("/data/:id", (req, res) => {
 });
 
 server.get("/random", (req, res) => {
-  const randomNumber2 = Math.floor(Math.random() * chistes.length);
-  const r3 = random(chistes);
-  console.log(randomNumber2, r3, chistes.length);
+  // const randomNumber2 = Math.floor(Math.random() * chistes.length);
+  // const r3 = random(chistes);
+  // console.log(randomNumber2, r3, chistes.length);
   const [data] = chistes.filter((chiste) => chiste.id == random(chistes));
   res.status(200).send(data);
 });
